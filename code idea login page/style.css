@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: gray;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom right, rgba(129,123,238,1) 0%, rgba(105,105,201,1) 47%, rgba(199,0,255,1) 100%);
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: whitesmoke;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin: 50px;
+    width: 55%;
+    height: 300px;
+    min-width: 590px;
+    min-height: 300px;
+
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.row{
+    display: flex;
+}
+.column{
+    flex: 50%;
+    height: 300px;
+}
+.bg{
+    color: white;
+    background-image: url("img/background.png");
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    padding: 20px;
+
+}
+.bg h3{
+    text-align: center;
+    margin-left: 5px;
+}
+
+.login{
+    padding:  0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login input[type="text"],input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border-width: 1px;
+    border: blue solid;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.login input[type="text"]:focus,input[type="password"]:focus{
+    outline: rgb(11,135,212) solid;
+}
+.login input[type="submit"]{
+    background-color: rgb(11,135,212);
+    color: white;
+    font-style: bold;
+    font-size: large;
+    width: 80%;
+    padding: 8px;
+    padding-bottom: 1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+
+
+}
+.login h3{
+    padding: 0;
+    font-size: 25px;
+    margin-bottom: 0;
+    text-align: left;
+    color: rgb(11,135,212);
+}
+.bl{
+    display: flex;
+    margin-top: 10px;
+    width: 200px;
+    height: 20px;
+}
+label{
+    margin-left: 5px;
+    font-size: 18px;
+}
+.bl input[type="checkbox"]{
+    accent-color: rgba(11,135,212);
+
+}
+.login #new{
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgb(11,135,212);
+}
+.forgot p{
+    margin-left: 25px;
+    margin-top: 0;
+    font-size: 15px;
+}
+.forgot a{
+    font-size: 15px;
+    color: gray;
+
+}
+.forgot{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
